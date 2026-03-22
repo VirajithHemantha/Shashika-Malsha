@@ -414,7 +414,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           height: 100%;
           border-radius: 10px;
           background:
-            linear-gradient(180deg, #fffdfb 0%, #f7f0e9 100%);
+            linear-gradient(180deg, #5c2975 0%, #3e1b52 100%);
           box-shadow:
             0 24px 60px rgba(65, 48, 34, 0.16),
             inset 0 1px 0 rgba(255,255,255,0.95);
@@ -441,7 +441,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           text-align: center;
           overflow: hidden;
           background:
-            radial-gradient(circle at top, rgba(255,255,255,0.95), rgba(255,255,255,0.75));
+            radial-gradient(circle at top, rgba(255,255,255,0.15), rgba(0,0,0,0.25));
         }
 
         .card-frame::before {
@@ -459,11 +459,11 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           border-radius: 999px;
           display: grid;
           place-items: center;
-          color: #173a69;
-          border: 1px solid rgba(23, 58, 105, 0.14);
+          color: #ffffff;
+          border: 1px solid rgba(255, 255, 255, 0.3);
           background:
-            radial-gradient(circle at top left, rgba(255,255,255,0.95), rgba(233,240,249,0.75));
-          box-shadow: 0 16px 34px rgba(31, 79, 146, 0.08);
+            radial-gradient(circle at top left, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+          box-shadow: 0 16px 34px rgba(0, 0, 0, 0.15);
           font-size: 34px;
           font-family: "Great Vibes", cursive;
           margin-bottom: 20px;
@@ -474,7 +474,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           font-size: 11px;
           letter-spacing: 0.26em;
           text-transform: uppercase;
-          color: #8d755f;
+          color: rgba(255, 255, 255, 0.9);
           margin-bottom: 14px;
         }
 
@@ -482,7 +482,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           font-family: "Great Vibes", cursive;
           font-size: 58px;
           line-height: 1;
-          color: #183a69;
+          color: #ffffff;
           margin: 0;
         }
 
@@ -490,20 +490,20 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           margin: 16px 0 26px;
           font-size: 18px;
           line-height: 1.7;
-          color: #63544a;
+          color: rgba(255, 255, 255, 0.85);
           max-width: 280px;
         }
 
         .card-divider {
           width: 90px;
           height: 1px;
-          background: linear-gradient(90deg, transparent, rgba(24,58,105,0.4), transparent);
+          background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
           margin-bottom: 24px;
         }
 
         .card-date {
           font-size: 18px;
-          color: #746255;
+          color: rgba(255, 255, 255, 0.9);
           margin-bottom: 10px;
           font-style: italic;
         }
@@ -511,14 +511,14 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
         .card-day {
           font-size: 30px;
           letter-spacing: 0.08em;
-          color: #1e4b8f;
+          color: #ffffff;
           font-weight: 600;
           margin-bottom: 10px;
         }
 
         .card-time {
           font-size: 18px;
-          color: #68584d;
+          color: rgba(255, 255, 255, 0.85);
           margin-bottom: 18px;
         }
 
@@ -528,7 +528,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           line-height: 1.9;
           letter-spacing: 0.18em;
           text-transform: uppercase;
-          color: #8b725d;
+          color: rgba(255, 255, 255, 0.9);
         }
 
         .bottom-floral-line {
@@ -551,7 +551,7 @@ export function EnvelopeOpening({ onComplete, onMusicStart }: { onComplete: () =
           border-top-right-radius: 220px 54%;
           border-bottom-right-radius: 220px 54%;
           background:
-            linear-gradient(135deg, #25569a 0%, #183d72 48%, #102a50 100%);
+            linear-gradient(135deg, #6c3287 0%, #4a2060 48%, #2d113f 100%);
           box-shadow:
             -18px 0 50px rgba(18, 35, 68, 0.36),
             inset 2px 0 8px rgba(255,255,255,0.18),
