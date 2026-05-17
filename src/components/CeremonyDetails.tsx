@@ -54,12 +54,9 @@ export const CeremonyDetails: React.FC<CeremonyDetailsProps> = ({ event = 'both'
                   <Calendar className="w-5 h-5 text-brand-beige-deep group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-beige-deep transition-colors duration-500">
+                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 group-hover:text-brand-beige-deep transition-colors duration-500">
                     {isHomecoming ? 'Date: 24-07-2026' : 'Date: 22-07-2026'}
                   </h4>
-                  <p className="text-stone-500/80 text-[11px] sm:text-xs uppercase tracking-[0.3em] font-bold">
-                    Event Timeline
-                  </p>
                 </div>
               </div>
 
@@ -95,7 +92,7 @@ export const CeremonyDetails: React.FC<CeremonyDetailsProps> = ({ event = 'both'
                         Church Ceremony
                       </h4>
                       <p className="text-stone-600/90 text-base sm:text-lg font-serif mb-1">
-                        <span className="font-bold">Time:</span> The Mass will commence at 8.00 am
+                        <span className="font-bold">Time:</span> 8.00 am
                       </p>
                       <p className="text-stone-600/90 text-base sm:text-lg font-serif">
                         <span className="font-bold">Venue:</span> Our Lady of Sorrows Church, Kandawala

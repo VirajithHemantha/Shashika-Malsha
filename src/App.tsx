@@ -91,7 +91,7 @@ export default function App() {
     : new Date("2026-07-22T08:00:00");
 
   return (
-    <div className="font-sans text-stone-800 bg-brand-ivory overflow-x-hidden selection:bg-brand-beige-deep/20">
+    <div className="font-sans text-stone-800 bg-brand-ivory selection:bg-brand-beige-deep/20">
       <Toaster position="top-center" />
       
       {/* Premium Floating Music Toggle */}
@@ -111,23 +111,25 @@ export default function App() {
         <InviteeBanner inviteeName={fullInviteeName} eventLabel={eventLabel} />
       )}
 
-      <div className="py-24 sm:py-32 bg-gradient-to-b from-brand-ivory via-white to-brand-ivory relative">
+      <div className="py-24 sm:py-32 bg-gradient-to-b from-brand-ivory via-white to-brand-ivory relative overflow-hidden">
         <CoupleDetails />
       </div>
 
-      <div className="py-24 sm:py-32 bg-white relative">
+      <div className="py-24 sm:py-32 bg-white relative overflow-hidden">
         <CeremonyDetails event={eventParam} />
       </div>
 
-      <div className="py-24 sm:py-32 bg-gradient-to-b from-white via-brand-champagne/30 to-brand-ivory relative">
+      <div className="py-24 sm:py-32 bg-gradient-to-b from-white via-brand-champagne/30 to-brand-ivory relative overflow-hidden">
         <Location event={eventParam} />
       </div>
 
-      <div className="py-24 sm:py-32 bg-brand-ivory relative">
-        <Timeline event={eventParam} />
-      </div>
+      {eventParam !== 'homecoming' && (
+        <div className="py-24 sm:py-32 bg-brand-ivory relative overflow-hidden">
+          <Timeline event={eventParam} />
+        </div>
+      )}
 
-      <div className="py-24 sm:py-32 bg-gradient-to-b from-brand-ivory via-white to-brand-ivory relative">
+      <div className="py-24 sm:py-32 bg-gradient-to-b from-brand-ivory via-white to-brand-ivory relative overflow-hidden">
           <div className="max-w-6xl mx-auto px-6 mb-16 text-center">
             <span className="text-brand-beige-deep uppercase tracking-[0.4em] text-[10px] sm:text-[11px] font-bold drop-shadow-sm">
               The Wait Is Almost Over
@@ -136,11 +138,11 @@ export default function App() {
           <Countdown targetDate={weddingDate} />
       </div>
 
-      <div className="py-24 sm:py-32 bg-brand-ivory relative">
+      <div className="py-24 sm:py-32 bg-brand-ivory relative overflow-hidden">
         <RSVPForm inviteeName={fullInviteeName} eventName={eventLabel} />
       </div>
 
-      <div className="py-24 sm:py-32 bg-gradient-to-b from-brand-ivory to-white relative mt-10">
+      <div className="py-24 sm:py-32 bg-gradient-to-b from-brand-ivory to-white relative mt-10 overflow-hidden">
         <WishesSection />
       </div>
 
