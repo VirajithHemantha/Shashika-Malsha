@@ -463,7 +463,7 @@ export function EnvelopeOpening({
 
               <div className="text-details">
                 Request the honour of your presence<br />
-                <span className="text-date">Friday 14 August 2026 At 10:15 AM</span>
+                <br />
                 <span className="text-church">The Grand Walawwa</span><br />
                 Kegalle
               </div>
