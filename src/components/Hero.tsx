@@ -5,6 +5,7 @@ import { FloatingPetals } from './FloatingPetals';
 
 interface HeroProps {
   event?: string | null;
+  inviteeName?: string;
 }
 
 function usePrefersReducedMotion() {
@@ -31,7 +32,7 @@ function useIsTouchDevice() {
   return touch;
 }
 
-export const Hero: React.FC<HeroProps> = ({ event = 'both' }) => {
+export const Hero: React.FC<HeroProps> = ({ event = 'both', inviteeName }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const reducedMotion = usePrefersReducedMotion();
   const isTouch = useIsTouchDevice();
@@ -102,7 +103,9 @@ export const Hero: React.FC<HeroProps> = ({ event = 'both' }) => {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 mb-12 sm:mb-16 relative z-10 bg-white/80 sm:bg-white/60 px-8 py-4 sm:py-3 rounded-full backdrop-blur-md border border-brand-plum/30 shadow-[0_10px_30px_rgba(201,169,110,0.15)]">
             <div className="hidden sm:block h-[1px] w-16 bg-gradient-to-r from-transparent via-brand-plum to-transparent" />
             <p className="text-[1.15rem] sm:text-2xl font-serif italic text-stone-900 font-bold tracking-wide px-2 text-center max-w-xl leading-relaxed drop-shadow-sm">
-              Together with our families, we joyfully invite you to join us
+              {inviteeName 
+                ? <>We cordially invite <span className="text-brand-plum">{inviteeName}</span> to join us</>
+                : 'Together with our families, we joyfully invite you to join us'}
             </p>
             <div className="hidden sm:block h-[1px] w-16 bg-gradient-to-r from-transparent via-brand-plum to-transparent" />
           </div>

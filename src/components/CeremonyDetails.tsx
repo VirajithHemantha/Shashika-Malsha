@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Clock, Calendar, MapPin, Heart, Sparkles } from 'lucide-react';
+import { Clock, Calendar, MapPin, Heart, Sparkles, Palette } from 'lucide-react';
 
 interface CeremonyDetailsProps {
   event?: string | null;
@@ -83,6 +83,25 @@ export const CeremonyDetails: React.FC<CeremonyDetailsProps> = ({ event = 'both'
                   <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">
                     Kegalle
                   </p>
+                </div>
+              </div>
+
+              {/* Theme Colors */}
+              <div className="relative group">
+                <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-brand-lavender/40 shadow-lg flex items-center justify-center group-hover:border-brand-plum group-hover:shadow-[0_4px_15px_rgba(176,137,104,0.3)] transition-all duration-500">
+                  <Palette className="w-5 h-5 text-brand-plum group-hover:scale-110 transition-transform duration-500" />
+                </div>
+                <div>
+                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-3 group-hover:text-brand-plum transition-colors duration-500">
+                    Theme Colors
+                  </h4>
+                  <div className="flex gap-3 items-center">
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full shadow-sm border border-black/5 transition-transform hover:scale-110" style={{ backgroundColor: '#78617d' }}></div>
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full shadow-sm border border-black/5 transition-transform hover:scale-110" style={{ backgroundColor: '#b19ab7' }}></div>
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full shadow-sm border border-black/5 transition-transform hover:scale-110" style={{ backgroundColor: '#8fa892' }}></div>
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full shadow-sm border border-black/5 transition-transform hover:scale-110" style={{ backgroundColor: '#f4c6c6' }}></div>
+                    <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full shadow-sm border border-black/5 transition-transform hover:scale-110" style={{ backgroundColor: '#fee9e8' }}></div>
+                  </div>
                 </div>
               </div>
             </div>

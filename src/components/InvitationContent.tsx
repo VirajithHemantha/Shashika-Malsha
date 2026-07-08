@@ -53,7 +53,7 @@ export function InvitationContent({
         )}
       </motion.button>
 
-      <Hero event={eventParam} />
+      <Hero event={eventParam} inviteeName={fullInviteeName} />
 
       {fullInviteeName && (
         <DeferredMount active={active} delay={80}>
@@ -109,7 +109,7 @@ export function InvitationContent({
 
       <DeferredMount active={active} delay={480} minHeight="30vh">
         <div className="py-24 sm:py-32 bg-gradient-to-b from-brand-blush to-white relative mt-10 overflow-hidden">
-          <WishesSection eventParam={eventParam} />
+          <WishesSection eventParam={eventParam} inviteeName={fullInviteeName} />
         </div>
       </DeferredMount>
 
